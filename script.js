@@ -17,5 +17,17 @@ function addText(event){
     div.appendChild(p);
 }
 
+var color=false;
+function changeBackground(event){
+    color = !color;
+    document.getElementsByTagName('body')[0].style.backgroundColor = event.target.id;
+    // document.getElementsByTagName('body')[0].style.backgroundColor = color ? 'red':'green';
+}
+
+function takeMeToGoogle(event){
+    // window.location.href = 'https://www.google.com';
+    window.open('https://www.google.com','_blank');
+
+}
 
 /* Task 4 using jQuery */
